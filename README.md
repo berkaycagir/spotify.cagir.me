@@ -1,6 +1,6 @@
 # Spotify Song Availability Checker
 
-This is the https://spotify.cagir.me's repository. This service checks Spotify's song availabilities in different countries, using the [Spotify Web API](https://beta.developer.spotify.com/documentation/web-api/).
+This is the [https://spotify.cagir.me](https://spotify.cagir.me)'s repository. This service checks Spotify's song availabilities in different countries, using the [Spotify Web API](https://beta.developer.spotify.com/documentation/web-api/).
 
 ## Dependencies
 
