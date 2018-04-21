@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <title>Spotify Song Availability Checker</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-105121040-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">Spotify Song Availability Checker</a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="index.html"><span class="glyphicon glyphicon-home"></span> Home</a>
+                        </li>
+
+                        <li>
+                            <a href="add.html"><span class="glyphicon glyphicon-plus"></span> Add checker</a>
+                        </li>
+
+                        <li class="active">
+                            <a href="#"><span class="glyphicon glyphicon-remove"></span> Delete checker</a>
+                        </li>
+
+                        <li>
+                            <a href="faq.html"><span class="glyphicon glyphicon-question-sign"></span> FAQ</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="https://cagir.me" target="_blank"><span class="glyphicon glyphicon-envelope"></span> Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="form">
+            <form action="del.php" method="post">
+                <div class="form-group">
+                    <label for="mail">Your mail address</label>
+                    <div class="row">
+                        <div class="col-xs-8 col-sm-4 col-xs-offset-2 col-sm-offset-4">
+                            <input id="mail" name="mail" required="" type="email" class="form-control" placeholder="E-mail address">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="id">Spotify ID of the song</label>
+                    <div class="row">
+                        <div class="col-xs-8 col-sm-4 col-xs-offset-2 col-sm-offset-4">
+                            <input id="id" name="id" type="text" class="form-control" placeholder="Spotify ID of the song">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <input type="submit" value="Delete" class="btn btn-danger">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <center>
+                <a href="pp.html">Privacy Policy</a>
+                | <a href="https://github.com/berkaycagir/spotify.cagir.me" target="_blank">View the source on GitHub</a>
+            </center>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+
+</body>
+
+</html>
